@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Safekornr</title>
+</head>
+
+<body>
+    
+    <img id="ambBackground" src="images/dzi-safekornr-amb2.png">
+
+    <h1 id="homeTitle">SAFEKORNR</h1>
+    <h5 id="homeSubTitle">An email-free place where your chats are safe!</h5>
+
+    <div class="marginIsGay">
+        <div class="inputContainer">
+            <p id="askingForNameText">Name:</p>
+            <div class="nameInputBox">
+                <input id="nameInputBox" type="name" minlength="5" name="name">
+                <!-- <button onclick="saveToUuidDb()" type="submit"> <img src="images/sendText.png" alt="Submit"></button> -->
+            </div>
+        
+            
+        </div>
+
+
+        <button id="profilePictureButtonBtn"></button>
+    </div>
+
+    
+    <div class="defaultButton">
+        <div id="btn1">
+            <button class="procedeButtons" id="createRoomButton" onclick="validateInput()">create a room</button>
+            <div id="btn2">
+                
+                <button class="procedeButtons" id="useKeyButton" onclick="checkKeysMatch()">use a key</button>
+                <div class="keyInputBox">
+                    <input type="password" name="password" id="myInput">
+                    <input type="checkbox" onclick="toggleKeyVisibility()">
+                    <label for="keyInputBox.checkbox">Show key</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="function.js"></script>
+    
+</body>
+
+</html>
